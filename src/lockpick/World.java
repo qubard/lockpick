@@ -37,11 +37,9 @@ public class World {
 					int g2 = Math.abs(c2.getGreen()-32);
 					int b2 = Math.abs(c2.getBlue()-26);
 					int s2 = r2+g2+b2;
-					if(s > 40 && s2 <= 40) {
-						return false;
-					}
 					
-					if(s2 > 40 && s <= 40) {
+					// the two images cannot possibly be the same
+					if((s > 40 && s2 <= 40) || (s2 > 40 && s <= 40)) {
 						return false;
 					}
 				}
