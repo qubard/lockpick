@@ -53,7 +53,7 @@ public class Player {
 	private Random r = new Random();
 	
 	private BufferedImage refresh(int x, int y, int w, int h) {
-        return robot.createScreenCapture(new Rectangle(x,y,w,h));
+        	return robot.createScreenCapture(new Rectangle(x,y,w,h));
 	}
 	
 	boolean once = false;
